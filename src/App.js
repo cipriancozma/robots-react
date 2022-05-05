@@ -3,6 +3,7 @@ import { API_USERS } from "./api";
 import "./App.css";
 import CardList from "./components/CardList";
 import InputBox from "./components/InputBox";
+import Scroll from "./components/Scroll";
 import Title from "./components/Title";
 
 function App() {
@@ -32,7 +33,9 @@ function App() {
     <div className="App">
       <Title title={"React Robots"}/>
       <InputBox handleChange={handleChange} className="search-box" />
-      <CardList robots={filteredRobots}/>
+      <Scroll>
+        <CardList robots={filteredRobots}/>
+      </Scroll>
     </div>
   );
 }

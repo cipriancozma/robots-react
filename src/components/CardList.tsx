@@ -1,8 +1,13 @@
 import React from 'react'
-import CardItem from './CardItem';
+import CardItem from './CardItem.tsx';
 import "../styles/CardList.css"
+import { Robots } from "../App";
 
-function CardList({ robots }) {
+interface CardListProps {
+    robots: Robots[]
+}
+
+function CardList({ robots }: CardListProps) {
     return (
         <div className="list">
             {

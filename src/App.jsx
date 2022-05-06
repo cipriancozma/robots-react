@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { API_USERS } from "./api";
 import "./App.css";
 import CardList from "./components/CardList";
-import InputBox from "./components/InputBox";
+import InputBox from "./components/InputBox.tsx";
 import Scroll from "./components/Scroll";
 import Title from "./components/Title";
 
